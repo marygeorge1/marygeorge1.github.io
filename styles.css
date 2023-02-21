@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+body{
+   background-color: white;
+}
+.navbar{
+    background-color: rgb(18, 6, 83);
+    
+}
+.nav-link,.navbar-brand{
+    color: aliceblue;
+}
+#main{
+    color: black;
+}
+
+#myimage{
+    
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+
+#mainleft{
+    color: rgb(24, 24, 124);
+    padding-top: 100px;
+    text-align: right;
+    padding-right: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+#myname{
+    font-size: 40px;
+}
+
+#myrole{
+    font-size: 25px;
+}
+
+#skills{
+    color: rgb(24, 24, 124);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#skills li{
+    list-style-type:circle;
+}
+
+#contactme{
+
+    color: rgb(24, 24, 124);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#sendbtn{
+    background-color: rgb(18, 6, 83);
+}
+
+.skillssection{
+    
+    color: aliceblue;
+    width:70%;
+    background-color: rgb(18, 6, 83);
+    padding: 20px;
+    margin: auto;
+    height: 200px;
+}
+
+
+

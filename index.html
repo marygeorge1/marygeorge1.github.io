@@ -1,59 +1,129 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="A. Trainer" />
-    <meta name="description" content="This is a wonderful web page" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="profileStyle.css" rel="stylesheet" />
-    <title>My Profile</title>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Go to profile</a>
-        <a href="projects.html">Go to projects</a>
-        <a href="https://www.linkedin.com" target="_blank">My LinkedIn</a>
+
+    <div class="container">
+
+    <!---------------------- Navbar -------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#hero-section">
+              M
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#main">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Technical Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactme">Contact</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <br>
-    <header>
-        <img src="image.jpg" alt="My picture" width="200px" height="200px"> 
-        <h1>Mary George</h1>
-        <h2>My profile</h2>
-        <p>An <em>awesome</em> and <strong>amazing</strong> website demonstration</p>
-    </header>
-    <section>
-       <h4>My Skills</h4>
-       <p>Agile, Scrum and other similar methodologies like <span>Kanban</span></p>
-       <p>Cooking up sweet code</p>
-    </section>
-    <section>
-        <h4>Hobbies</h4>
-       <ul>
-          <li>Learning Languages</li>
-          <li>Hiking</li>
-          <li>Astronomy</li>
-       </ul>
-    </section>
-    <section>
-       <h4>Goals</h4>
-       <ol>
-          <li>Become great developer</li>
-          <li>get taken on permanently</li>
-       </ol>
-    </section>
-    <section>
-        <h3>Search for news</h3>
-        <form action="https://www.bbc.co.uk/search">
-            <label for="mysearch">Search for: </label>
-            <input type="text" id="mysearch" name="q" value="Birmingham"> 
-            <input type="submit" class="button" value="Submit"> 
-        </form>
-    </section>
+    <!-- -------------------------Navbar ends-------------- -->
+
+
+    <!-----------------------------main--------------------  -->
+    <div id="main">
+    <br><br><br><br>
+    <div class="row" >
+        <div class="col-sm-6" id="mainleft">
+            <p id="myname">I am Mary George..</p>
+            <p id="myrole">I am a Java Developer!!</p>
+        </div>
+        <div class="col-sm-6" id="mainright">
+            <img src="image4.jpg" alt="Random image" height="450px" width="500px" id="myimage">
+        </div>
+    </div>
+</div>
+     <!--------------------------main ends------------------->
+
+     <br><br>
+
+    <!-----------------------------skills-------------------->
+    <div id="skills">
+    <br><br><br>
+    <div class="row" >
+        <div class="col-sm-12">
+            <h3>Technical Skills</h3>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 board">
+            <div class="skillssection">
+            <h4>FRONT END</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="skillssection">
+                <h4>BACK END</h4>
+                <ul>
+                    <li>JAVA</li>
+                    <li>REST API</li>
+                    <li>SPRING FRAMEWORK</li>
+                    <li>SQL</li>
+                </ul>
+                </div>
+        </div>
+    </div>
     
-    <footer>
-        <small>Copyright &#169; Sparta Global 2023 <cite>Mary George</cite></small>
-    </footer>
+</div>
+
+    <!-------------------------- Contact Me---------------------->
+    <div id="contactme">
+    <br><br><br>
+    <div class="row" >
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <h3>Contact Me</h3>
+            <form>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+                <br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                <br>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter your contact number">
+                <br>
+                <textarea name="message" id="message" class="form-control" placeholder="Enter your message here"></textarea>
+                <br>
+                <input type="submit" name="sendbtn" id="sendbtn" value="Send Message" class="btn btn-primary">
+            </form>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+
+
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/083f583cdb.js" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>
